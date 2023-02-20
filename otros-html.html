@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case HTML</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>HTML</h2>
+	<h3>133) Duplicate id</h3>
+    <div class="example">
+        <div id="nav">global nav</div>
+        <div id="nav">page nav</div>
+    </div>
+
+    <h3>134) Incorrect use of start and end tags or attribute markup</h3>
+    <div class="example">
+        <div>strings of pearls</span></div>
+    </div>
+
+    <h3>135) Empty paragraph</h3>
+    <div class="example">
+        <p></p>
+    </div>
+
+    <h3>136) Deprecated color definition</h3>
+    <div class="example">
+        <p><font color="blue">The colour of this text is set using the font element and the color attribute</font></p>
+    </div>
+
+    <h3>137) Deprecated font element</h3>
+    <div class="example">
+        <p><font size="5" face="aria">The size and face of this text is set using the font element and the size and face attributes</font></p>
+    </div>
+
+    <h3>138) Deprecated center element</h3>
+    <div class="example">
+        <center>This text is centred using the center element</center>
+    </div>
+
+    <h3>139) Spacer image found</h3>
+    <div class="example">
+        <img src="images/spacer.gif" alt="" width="100" height="1">
+    </div>
+
+    <h3>140) PRE element without CODE element inside it</h3>
+    <div class="example">
+        <pre>
+public class MyClass{
+	public static void main(String args[]){
+		System.out.println("Hello world...");
+	}
+}
+</pre>
+    </div>
+
+    <h3>141) Object not embedded accessibly - wmode parameter not set to window</h3>
+    <div class="example">
+        <object data="foo" type="bar"></object>
+    </div>
+
+    <!-- From test2 -->
+    <h3>142) Invalid ARIA role names</h3>
+    <div class="example">
+        <div id="global-breadcrumb" class="header-context">
+            <ol class="group" role="breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li><a href="/browse/housing-local-services">Housing and local services</a></li>
+                <li><strong><a href="/browse/housing-local-services/local-councils">Local councils and services</a></strong></li>
+            </ol>
+        </div>
+    </div>
+
+    <h3>143) Article element used to mark-up an element that's not an article/blog post etc.</h3>
+    <div class="example">
+        <article class="not-article-content">
+            <h2 id="parent-other">Elsewhere on GOV.UK</h2>
+              <nav role="navigation" aria-labelledby="parent-other">
+                <ul>
+                    <li><a href="/agency-workers-your-rights">Your rights as an agency worker</a></li>
+                    <li><a href="/acas">Advisory, Conciliation and Arbitration Service (Acas)</a></li>
+                </ul>
+            </nav>
+        </article>
+    </div>
+    <!-- /From test2 -->
+    
+    
+    <h3>144) ASCII Art chart without a text alternative</h3>
+		<div class="example">
+			<pre>
+	Your
+
+	  /\ (`/`|| _     +
+	 /--\,)\,||   (||`|
+	
+	goes here
+			</pre>
+		</div>
+</body>
+</html>

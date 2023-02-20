@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Others 3</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/test3.css">
+	<script src="js/test1.js"></script>
+	
+	<style type="text/css">
+
+       body {background-color:white}
+    </style>
+	
+</head>
+<body onLoad="scrollStart();">
+	<h1>171) changing the meaning of content by positioning information with CSS</h1>
+	<div class="example">
+		<div class="box">      
+		     <span class="menu1">Products</span>       
+		     <span class="menu2">Locations</span>       
+		     <span class="item1">Telephones</span>       
+		     <span class="item2">Computers</span>       
+		     <span class="item3">Portable MP3 Players</span>       
+		     <span class="item5">Wisconsin</span>       
+		     <span class="item4">Idaho</span>
+		</div>
+	</div>
+	
+	
+	
+	
+	<h2>172) anchor to reference empty</h2>
+	<div class="example">
+		<a href="#">anchor to reference empty</a>		
+	</div>
+	
+	
+	<h3>173) anchor to reference not exist</h3>
+	<div class="example">
+		<a href="#example">anchor to reference not exist</a>
+		<div id="diferent-example">
+			Web Content Accessibility Guidelines (WCAG) 2.0 covers a wide range of recommendations for making Web content more accessible. Following these guidelines will make content accessible to a wider range of people with disabilities, including blindness and low vision, deafness and hearing loss, learning disabilities, cognitive limitations, limited movement, speech disabilities, photosensitivity and combinations of these. Following these guidelines will also often make your Web content more usable to users in general.		
+		</div>		
+	</div>
+	
+	<h3>174) Element b  depreated</h3>
+	<div class="example">
+		<b>WCAG 2.0</b> success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG) Overview for an introduction and links to WCAG technical and educational material.	
+	</div>
+	
+	<h3>175) Element i depreated</h3>
+	<div class="example">
+		WCAG 2.0 success criteria are written as testable statements that are not technology-specific. Guidance about satisfying the success criteria in specific technologies, as well as general information about interpreting the success criteria, is provided in separate documents. See Web Content Accessibility Guidelines (WCAG) Overview for an <i>introduction and links</i> to WCAG technical and educational material.	
+	</div>
+
+	<h3>176) including scrolling content where movement is not essential to the activity without also including a mechanism to pause and restart the content</h3
+	>
+	<div class="scrollWrapper" onMouseover="scrollspeed=0"
+		onMouseout="scrollspeed=current">
+		<div class="scrollTitle">Últimas Noticias</div>
+		<div id="scroll">
+
+			<div class="title">Primera Noticia</div>
+			<div class="content">
+				Contenido de ejemplo para el scroll de noticias personalizable. En
+				el contenido puedes añadir cualquier codigo HTML, incluidos enlaces
+				<a href="http://www.lawebdelprogramador.com" target="_top">La
+					Web del programador</a>
+			</div>
+
+			<div class="title">Segunda Noticia</div>
+			<div class="content">
+				Contenido de ejemplo para el scroll de noticias personalizable. En
+				el contenido puedes añadir cualquier codigo HTML, incluidos enlaces
+				<a href="http://www.lawebdelprogramador.com" target="_top">La
+					Web del programador 2017</a>
+			</div>
+
+			<div class="title">Tercera Noticia</div>
+			<div class="content">
+				Contenido de ejemplo para el scroll de noticias personalizable. En
+				el contenido puedes añadir cualquier codigo HTML, incluidos enlaces
+				<a href="http://www.lawebdelprogramador.com" target="_top">La
+					Web del programador 2018</a>
+			</div>
+
+		</div>
+	</div>
+	
+	<h3>177) due to specifying foreground colors without specifying background colors or viceversa <a href="https://www.w3.org/TR/WCAG20-TECHS/F24.html">Techniques for WCAG 2.0: F24</a></h3>
+	<div class="example">
+		<p>El sistema se espera que alerte de que el color de primer plano no se ha definido</p>
+		<p>My background is white.</p>
+	</div>
+	
+	<h3>178) emulating links (hay dos errores, debe detectar uno... el error esta que en lugar de un "a" usa un location href</h3>
+	<div class="example">
+		<span onclick="location.href='newpage.html'">
+		    Fake link whit onclick
+		</span>
+		<img src="images/next-page.jpg" 
+		   alt="go to the new page" 
+		   onclick="location.href='newpage.html'"/>
+	</div>
+	
+	<h3>179) due to using script to remove focus when focus is received
+	 <a href="https://www.w3.org/TR/WCAG20-TECHS/F55.html">Techniques for WCAG 2.0: F55</a></h3>
+	<div class="example">
+		<form action="">
+			<a onFocus="this.blur()" href="page.html"><img src="images/submit87.png" alt="Save data for all"></a>
+			<input type="submit" onFocus="this.blur();" value="Save data"/>
+		</form>
+	</div>
+	
+	<h3>180) absence of a way to pause or stop an HTML5 media element that autoplays </h3>
+	<div class="example">
+		<video  autoplay loop>
+			<source src="http://introducinghtml5.com/examples/ch04/leverage-a-synergy.ogv" type='video/ogg; codecs="theora, vorbis"' />
+           <source src="http://introducinghtml5.com/examples/ch04/leverage-a-synergy.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+		</video>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>     
+    <title>Accessibility Fails - Other test</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+  </head>   
+  <body>
+    <h1>Accessibility Fails - ARIA - HTML 5</h1>
+    
+    <h2>1.1.1 Non-text Content</h2>
+	<h3>Dynamic content with JavaScript</h3>
+	<div class="example">
+		<script>
+			document.write("<img src='images/valid-wcag.png'>");
+		</script>
+	</div>
+    
+    <h2>1.3.1 Info and Relationships</h2>
+	<h3>Use of role presentation on content which conveys semantic information</h3>
+    <div class="example">
+    	<table role="presentation">
+		   <caption>Fruits and their colors</caption>
+		   <tr>
+		     <th>Name</th>
+		     <th>Color</th>
+		   </tr>
+		   <tr>
+		    <td scope="row">banana</td>
+		    <td>yellow</td>
+		   </tr>
+		   <tr>
+		    <td scope="row">orange</td>
+		    <td>orange</td>
+		   </tr>
+		  </table>
+    	
+    </div>
+    
+    
+    <h2>1.3.1 Info and Relationships</h2>
+	<h3>Use of role presentation on content which conveys semantic information</h3>
+    <div class="example">
+    	<img src="images/decoration.png" role="presentation"/>Cedrus deodara    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>Use of aria-label</h3>
+    <div class="example">
+    	<button aria-label="Close" onclick="myDialog.close()">X</button>    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>Use  without aria-label</h3>
+    <div class="example">
+    	<button onclick="myDialog.close()">X</button>    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>Use of aria-label</h3>
+	<form>
+    <div role="group" aria-labelledby="groupLabel">
+		  <span id="groupLabel">Work Phone:</span> +
+		  <input type="number" aria-label="country code"/>
+		  <input type="number" aria-label="area code"/>
+		  <input type="number" aria-label="subscriber number"/>
+	</div>
+	</form>
+	
+	<h2>Aria - HTML5</h2>
+	<h3>Use without aria-label 2</h3>
+    <div class="example">
+	   <form>
+		  <span id="groupLabel2">Work Phone+:</span>
+		  +
+		  <input type="number"/>
+		  <input type="number"/>
+		  <input type="number"/>
+		</form>
+	</div>
+  </body> 
+</html>

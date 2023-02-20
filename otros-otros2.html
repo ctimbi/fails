@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Test case Others 2</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1>Test Others 2</h1>
+	<h2>Others</h2>
+	<h3>161) Id refer to element not exist in page</h3>
+	<div class="example">
+		<div role="img" aria-labelledby="star_id">
+			<img src="images/fullstar.png" alt="" /> <img
+				src="images/fullstar.png" alt="" />
+
+		</div>
+		<div id="starId">2 of 2</div>
+	</div>
+
+	<h3>162) Element area whitout alt attibute</h3>
+	<div class="example">
+		<img src="images/planets.gif" width="145" height="126"
+			alt="Planets of the solar system" usemap="#planetmap">
+
+		<map name="planetmap">
+			<area shape="rect" coords="0,0,82,126" href="sun.htm">
+			<area shape="circle" coords="90,58,3" href="mercur.htm">
+			<area shape="circle" coords="124,58,8" href="venus.htm">
+		</map>
+	</div>
+
+	<h3>163) Image in background with CSS is informative</h3>
+	<div class="example">
+		<div class="sales"></div>
+	</div>
+
+	<h3>164) Automatically started sound after the web page is loaded
+		with more 3 seconds</h3>
+	<div class="example">
+		<audio src="0963.ogg" autoplay></audio>
+	</div>
+
+	<h3>165) Element with focus are not visible in the viewport.</h3>
+	<div class="example">
+		<a href="#content" class="offsetTop">Skip main content</a>
+	</div>
+
+	<h3>167) tables used for layout purposes do not contain tabular
+		data or markup</h3>
+	<div class="example">
+		<table role="presentation">
+			<caption>Fruits and their colors</caption>
+			<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Color</th>
+				</tr>
+				<tr>
+					<td scope="row">banana</td>
+					<td>yellow</td>
+				</tr>
+				<tr>
+					<td scope="row">orange</td>
+					<td>orange</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h3>168) submit and reset buttons must be unique (un solo submit y/o reset por form)</h3>
+	<div class="example">
+		<form>
+			<label for="user">User:</label> <input type="text" id="user" /> <label
+				for="password">User:</label> <input type="password" id="password" />
+			<input type="submit" value="Submit">
+		</form>
+
+		<form>
+			<label for="search">Search:</label> <input type="text" id="search" />
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	
+	<h3>169) Forms submitted using buttons (form dont have button)</h3>
+	<div class="example">
+		<form class="errors-badly-identified errors-not-identified">
+
+			<label> Name <input type="text" name="name" />
+			</label> <label> Surname <input type="text" name="surname" />
+			</label> <label> Date of birth <input type="text"
+				name="date-of-birth" />
+			</label>
+
+		</form>
+	</div>
+	
+	<h3>170) Multiple ways are available to find other web pages on the site</h3>
+	<div class="example">
+		Verificar que la herramienta de una alerta o una recomendación de algo que debería implementar la página en relación a:
+		<ul>
+			<li>Busqueda en el sitio</li>
+			<li>Menu de navegación</li>
+			<li>etc.</li>
+		</ul>
+	</div>
+
+	
+
+</body>
+</html>

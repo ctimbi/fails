@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Test case Tablest</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Tables</h2>
+	<h3>41) Table is missing a caption</h3>
+	<div class="example">
+		<table>
+			<thead>
+				<tr>
+					<th>Name T3</th>
+					<th>Age</th>
+					<th>Birthday</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Jackie</th>
+					<td>5</td>
+					<td>April 5</td>
+				</tr>
+				<tr>
+					<th>Beth</th>
+					<td>8</td>
+					<td>January 14</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<h4>42) Table has an empty table header</h4>
+			<div class="example">
+				<table>
+					<caption>
+						Contac information
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th></th>
+							<th scope="col">City</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Joel Garner</td>
+							<td>15</td>
+							<td>Pittsburgh</td>
+						</tr>
+						<tr>
+							<td>Clive Lloyd</td>
+							<td>6</td>
+							<td>Baltimore</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		<h4>43) Table has no table headings</h4>
+		<div class="example">
+        <table>
+            <caption>Shelly's Daughters</caption>
+            <thead>
+            <tr>
+                <td>Country</td>
+                <td>Year</td>
+                <td>Date</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Marcos</td>
+                <td>44</td>
+                <td>April 5</td>
+            </tr>
+
+            <tr>
+                <td>Loja</td>
+                <td>33</td>
+                <td>January 14</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <h4>44) Table that only has TH elements in it</h4>
+			<div class="example">
+				<table>
+					<caption>
+						Internal caption in	Table that only has TH elements in it
+					</caption>
+					<thead>
+						<tr>
+							<th>Foo</th>
+							<th>Bar</th>
+							<th>Bat</th>
+							<th>Baz</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			
+		<h4>45) Table nested within table header</h4>
+			<div class="example">
+				<table>
+					<caption>
+						Table nested within table header
+					</caption>
+					<tbody>
+						<tr>
+							<th>
+							<table>
+								<caption>
+								Internal caption
+								</caption>
+								<tbody>
+									<tr>
+										<th>b.a</th>
+									</tr>
+									<tr>
+										<td>b.b</td>
+									</tr>
+								</tbody>
+							</table></th>
+						</tr>
+						<tr>
+							<td>a.b</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+		<h4>46) Table nested within table</h4>
+			<div class="example">
+				<table>
+					<caption>
+						Example Table nested within table
+					</caption>
+					<tbody>
+						<tr>
+							<th>1.1</th>
+						</tr>
+						<tr>
+							<td>
+							<table>
+								<caption>
+								Internal caption in	Example Table nested within table
+								</caption>
+								<tbody>
+									<tr>
+										<th>2.1</th>
+									</tr>
+									<tr>
+										<td>2.2</td>
+									</tr>
+								</tbody>
+							</table></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	
+	<h4>47) Table used for layout (search false positivo)</h4>
+	<div class="example">
+        <table role="presentation">
+            <tbody><tr>
+                <td>navigation</td>
+                <td>main content</td>
+            </tr>
+        </tbody></table>
+    </div>
+	
+	<h3>48) Table with inconsistent numbers of columns in rows</h3>
+	<div class="example">
+        <table>
+            <caption>Requester information</caption>
+            <thead>
+                <tr>
+                    <th colspan="10">Requester Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th colspan="1" id="name" class="label">Name</th>
+                  <td colspan="7" headers="name">Jon Smith</td>
+                  <th colspan="1" id="date" class="label">Date</th>
+                  <td colspan="1" headers="date">9/9/2005</td>
+                </tr>
+                <tr>
+                  <th colspan="1" id="dept" class="label">Department</th>
+                  <td colspan="9" headers="dept">Customer Service</td>
+                </tr>
+                <tr>
+                  <th colspan="1" id="remail" class="label">E-mail</th>
+                  <td colspan="4" headers="remail">jon.smith@gov.uk</td>
+                  <th colspan="1" id="rphone" class="label">Phone</th>
+                  <td colspan="4" headers="rphone">07700 900258</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <h4>49) Table with some empty cells</h4>
+    <div class="example">
+        <table>
+            <caption>Bills before Parliament 2016-17</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Current House
+                    </th>
+                    <th>
+                        Bill title
+                    </th>
+                    <th>
+                        Last updated
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>A</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Lords
+                    </td>
+                    <td>
+                        Abortion (Disability Equality) Bill [HL]
+                    </td>
+                    <td>26.05.2016</td>
+                </tr>
+                <tr>
+                    <td>
+                        Lords
+                    </td>
+                    <td>
+                        Access to Palliative Care Bill [HL]
+                    </td>
+                    <td>10.06.2016</td>
+                </tr>            
+            </tbody>
+        </table>
+    </div>
+    
+    <h4>50) Table with column headers and double row headers</h4>
+    <div class="example">
+        <table>
+            <caption>Road Traffic at Junctions</caption>
+            <tbody><tr>
+                <th>Road</th>
+                <th>Junction</th>
+                <th>Car</th>
+                <th>Bus</th>
+            </tr>
+            <tr>
+                <th>Regent Street</th>
+                <th>Oxford Street</th>
+                <td>307</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <th>Regent Street</th>
+                <th>Bond Street</th>
+                <td>1731</td>
+                <td>58</td>
+            </tr>
+            <tr>
+                <th>Southwark Street</th>
+                <th>Union Street</th>
+                <td>1975</td>
+                <td>51</td>
+            </tr>
+        </tbody></table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Test case Contrast</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2 id="links">Links</h2>
+    
+    <h3>64) Uninformative link text</h3>
+    <div class="example">
+        <h4>Polar bear</h4>
+        <p>The polar bear is a carnivorous bear whose native range lies largely within the Arctic Circle,
+            encompassing the Arctic Ocean, its surrounding seas and surrounding land masses.</p>
+        <a href="https://en.wikipedia.org/wiki/Polar_bear">Read more</a>
+    </div>
+
+    <h3>65) Non-specific link text</h3>
+    <div class="example">
+        <a href="rockies.html">Click here</a> for more information on the Rocky Mountains.
+    </div>
+
+    <h3>66) Link text does not make sense out of context</h3>
+    <div class="example">
+        <p>To know more about me, visit my <a href="page.html">page</a>.</p>
+    </div>
+
+    <h3>67) Adjacent links going to the same destination</h3>
+    <div class="example">
+        <a href="https://en.wikipedia.org/wiki/Red_panda"><img src="images/red_panda.jpg" width="220" height="165" alt="Red Panda" /></a>
+        <a href="https://en.wikipedia.org/wiki/Red_panda">Red Panda</a>
+    </div>
+
+    <h3>68) Image link alt text repeats text in the link</h3>
+    <div class="example">
+        <a href="https://en.wikipedia.org/wiki/Red_panda">
+            <img src="images/red_panda.jpg" width="220" height="165" alt="Red Panda" />
+            Red Panda
+        </a>
+    </div>
+
+    <h3>69) Image link with no alternative text</h3>
+    <div class="example">
+        <a href="http://www.bbc.co.uk"><img src="images/bbc-blocks-dark.png" alt="" /></a>
+    </div>
+
+    <h3>70) Blank link text</h3>
+    <div class="example">
+        <a href="http://www.google.com"></a>
+    </div>
+
+    <h3>71) Link contains only a full stop</h3>
+    <div class="example">
+        Visit the GOV.UK website <a href="https://www.gov.uk/">.</a>
+    </div>
+
+    <h3>72) Link with the same text go to different pages</h3>
+    <div class="example">
+        <a href="https://en.wikipedia.org/wiki/Lion">Lions</a> are the only truly social cats, with related females
+        living together in prides overseen by male coalitio that compete for possession in fierce and often fatal battles.
+        <a href="http://animals.nationalgeographic.com/animals/mammals/african-lion/">Lions</a> are predatory carnivores and it's the females that perform most of the hunting at night; the majority
+        of the prey being antelope, zebra and wildebeest.
+    </div>
+
+    <h3>73) Link text with identical title</h3>
+    <div class="example">
+        <a href="http://www.google.com" title="Google">Google</a>
+    </div>
+
+    <h3>74) Link launches new window with no warning</h3>
+    <div class="example">
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+    </div>
+
+    <h3>75) Link not clearly identifiable and distinguishable from surrounding text</h3>
+    <div class="example">
+        <p class="unobvious-link">Find out more about <a href="http://www.bbc.co.uk/programmes/b006q2x0">Doctor Who</a></p>
+    </div>
+
+    <h3>76) Link to pdf does not include information on file format and file size</h3>
+    <div class="example">
+        <a href="http://www.bdadyslexia.org.uk/common/ckeditor/filemanager/userfiles/About_Us/policies/Dyslexia_Style_Guide.pdf">Dyslexia style guide</a>
+    </div>
+
+    <h3>77) Link to an image, no text alternative</h3>
+    <div class="example">
+        My favourite <a href="images/bat.jpg">bat</a>
+    </div>
+
+    <h3>80) Links not seperated by printable characters</h3>
+    <div class="example">
+        <a href="a.html">Page A</a> <a href="b.html">Page B</a> <a href="c.html">Page C</a>
+    </div>
+
+    <h3>81) Link to #, invalid hypertext reference</h3>
+    <div class="example">
+        <a href="#">Do something</a>
+    </div>
+
+    <h3>82) Link to javascript, invalid hypertext reference</h3>
+    <div class="example">
+        <a href="javascript:alert('Hello world!')">Press me!</a>
+    </div>
+
+    <!-- From test2 -->
+    <h3>83) Identifying links by colour alone</h3>
+    <div class="example">
+        <p class="links-by-colour-alone">
+            <a href="#">A normal link</a>
+            <br />
+            Some text
+            <br />
+            <a class="colour-alone-link" href="#">Link only identifiable by colour alone</a>
+        </p>
+    </div>
+    <!-- /From test2 -->
+	
+</body>
+</html>

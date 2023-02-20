@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Language</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Language</h2>
+	<h3>25) Lang attribute not used to identify change of language</h3>
+	<div class="example">
+		<p>
+			Mother, he's asking you to go. He's saying, "Allons, Madame plaisante!"
+		</p>
+	</div>
+
+	<h4>26) Lang attribute used to identify change of language, but with invalid value</h4>
+	<div class="example">
+		<p>
+			Mother, he's asking you to go. He's saying, <span lang="frrr">"Allons, Madame plaisante!"</span>
+		</p>
+	</div>
+
+	<h4>27) Lang attribute used to identify change of language, but with wrong language</h4>
+	<div class="example">
+		<p>
+			Mother, he's asking you to go. He's saying, <span lang="es">"Allons, Madame plaisante!"</span>
+		</p>
+	</div>
+	
+	<h4>28) Text language changed without required change in direction</h4>
+	<div class="example">
+		<p lang="ar">
+			النص المكتوب باللغة العربية
+		</p>
+	</div>
+	
+	<h4>29) Text language is in the wrong direction</h4>
+	<div class="example">
+        <p dir="rtl" lang="en">Electronic visa waiver</p>
+    </div>
+    
+</body>
+</html>

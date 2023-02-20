@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Contrast</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Contrast</h2>
+	<h3>(9) Large text does not have a contrast ratio of at least 3:1 so does not meet AA</h3>
+	<div class="example">
+		<p class="low-contrast-large-aa">This large text does not have
+			enough contrast with it's background</p>
+	</div>
+
+	<h3>(8) Small text does not have a contrast ratio of at least 4.5:1 so does not meet AA</h3>
+	<div class="example">
+		<p class="low-contrast-small-aa">This small text does not have
+			enough contrast with it's background</p>
+	</div>
+	
+	<h3>(11) Large text does not have a contrast ratio of at least 4.5:1 so does not meet AAA</h3>
+	<div class="example">
+		<p class="low-contrast-large-aaa">
+			This large text does not have enough contrast with it's background
+		</p>
+	</div>
+
+	<h3>(10) Small text does not have a contrast ratio of at least 7:1 so does not meet AAA</h3>
+	<div class="example">
+		<p class="low-contrast-small-aaa">
+			This small text does not have enough contrast with it's background
+		</p>
+	</div>
+	
+	<h2>Color</h2>
+	<h3>(7) Color alone is used to convey content</h3>
+	<div class="example">
+        <p>The green mushrooms listed here are OK to eat. The red mushrooms will kill you.</p>
+        <ul>
+            <li class="poisonous">Amanita</li>
+            <li class="safe">Chanterelle</li>
+            <li class="safe">Porcini</li>
+            <li class="safe">Shitake</li>
+            <li class="poisonous">Tylopilus</li>
+        </ul>
+    </div>
+    <h3>(12) Focus not visible</h3>
+    <div class="example">
+        <a href="example.html" class="not-visible-outline-link">This links has visible focus</a> but this button
+        <button class="not-visible-outline">Search</button> doesn't
+    </div>
+</body>
+</html>

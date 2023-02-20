@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Multimedia</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Multimedia</h2>
+	<h2 id="multimedia">Multimedia</h2>
+    <h3>61) Embedded video file is missing text alternative (track caption)</h3>
+    <div class="example">
+        <video controls>
+           <source src="http://introducinghtml5.com/examples/ch04/leverage-a-synergy.ogv" type='video/ogg; codecs="theora, vorbis"' />
+           <source src="http://introducinghtml5.com/examples/ch04/leverage-a-synergy.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+        </video>
+    </div>
+
+    <h3>62) Embedded audio file is missing text alternative (track caption)</h3>
+    <div class="example">
+        <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" controls></audio>
+    </div>
+
+    <h3>63) Flashing content doesn't have warning</h3>
+    <div class="example">
+        <iframe width="560" height="315" title="Banned Pokemon scene" src="https://www.youtube.com/embed/gwoQRKCEHgY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <h3>78) Link to a multimedia (video) file, no transcript</h3>
+    <div class="example">
+        <a href="interview.mov">Watch the interview</a>
+    </div>
+
+    <h3>79) Links to a sound file, no transcript</h3>
+    <div class="example">
+        <a href="interview.mp3">Listen to the interview</a>
+    </div>
+</body>
+</html>

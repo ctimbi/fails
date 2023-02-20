@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>     
+    <title>Accessibility Fails - Other test</title>  
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+  </head>   
+  <body>
+    <h1>Accessibility Fails - ARIA - HTML 5</h1>
+    
+    <h2>Test cases</h2>
+    
+    
+    
+	<h3>181) Use of role presentation on content which conveys semantic information</h3>
+    <div class="example">
+    	<p>Cedrus deodara, the deodar cedar, Himalayan cedar, or deodar/devdar/devadar/devadaru, is a species of cedar native to the western Himalayas in Eastern Afghanistan, Northern Pakistan (especially in Khyber Pakhtunkhwa) and India (Jammu and Kashmir, Himachal Pradesh, Uttarakhand, Sikkim and, Arunachal Pradesh states and the Darjeeling Region of West Bengal), Southwestern Tibet and Western Nepal</p>
+    	<img src="images/cedrus_deodara.jpg" role="presentation" width="300px"/>    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>182a) Use of aria-label</h3>
+    <div class="example">
+    
+    	<button aria-label="Close" onclick="myDialog.close()">X</button>    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>182b) Use  without aria-label</h3>
+    <div class="example">
+    	<button onclick="myDialog.close()">X</button>    
+    </div>
+    
+    <h2>Aria - HTML5</h2>
+	<h3>183a) Inputs multiple - Use of aria-label</h3>
+	<form>
+    <div role="group" aria-labelledby="groupLabel">
+		  <span id="groupLabel">Work Phone:</span> +
+		  <input type="number" aria-label="country code"/>
+		  <input type="number" aria-label="area code"/>
+		  <input type="number" aria-label="subscriber number"/>
+	</div>
+	</form>
+	
+	<h2>Aria - HTML5</h2>
+	<h3>183b) Inputs multiple - Use without aria-label 2</h3>
+    <div class="example">
+	   <form>
+		  <span id="groupLabel2">Work Phone+:</span>
+		  +
+		  <input type="number"/>
+		  <input type="number"/>
+		  <input type="number"/>
+		</form>
+	</div>
+  </body> 
+</html>

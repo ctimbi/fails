@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Frames & CSS</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test Frames & CSS</h1>
+	<h2>Frames</h2>
+	<h2 id="frames">Frames</h2>
+    <h3>124) iframe is missing a title attribute</h3>
+    <div class="example">
+        <iframe src="demo-iframe-missing.html" width="300" height="100"></iframe>
+    </div>
+    
+    <h3>125) iframe title attribute does not describes the content or purpose in the iframe</h3>
+    <div class="example">
+        <iframe src="demo-iframe-wrong.html" width="300" height="100" title="X"></iframe>
+    </div>
+
+	<h3>126) iframe has an empty title attribute</h3>
+    <div class="example">
+        <iframe src="demo-iframe-empty.html" width="300" height="100" title=""></iframe>
+    </div>
+    
+    <h2 id="css">CSS</h2>
+    <h3>127) display:none used to visually hide content when it should be available to screenreader</h3>
+    <div class="example">
+        <a href="football.html">Read more <span style="display:none"> about football</span></a>
+    </div>
+
+    <h3>128) visibility:hidden used to visually hide content when it should be available to screenreader</h3>
+    <div class="example">
+        <a href="rugby.html">Read more <span style="visibility:hidden"> about rugby</span></a>
+    </div>
+
+    <h3>129) Content is not readable and functional when text is increased</h3>
+    <div class="example">
+        <p class="resize">This text becomes unreadable when you increase the text-size  (Zoom text only) in
+            <a href="https://www.mozilla.org/en-GB/firefox/desktop/">Firefox</a></p>
+    </div>
+
+    <h3>130) Non-decorative content inserted using CSS</h3>
+    <div class="example">
+        <p id="css-generated-text">My favourite food is </p>
+    </div>
+
+    <h3>131) display:table being used for layout</h3>
+    <div class="example">
+        <div class="display-table">
+            <div class="display-table-cell">
+                Vertically and horzontally aligned text
+            </div>
+        </div>
+    </div>
+
+    <!-- From test2 -->
+    <h3>132) Page zoom - boxes that don't expand with the text</h3>
+    <div class="example">
+        <div class="wont-expand-box">The box below this example won't expand to fit the text contained within when zoomed in.
+
+            <p class="wont-expand">
+                This service is for England and Wales only. You must contact individual <a rel="external" href="https://www.justice-ni.gov.uk/topics/prisons/prison-visits">prisons in Northern Ireland</a> or <a rel="external" href="http://www.sps.gov.uk/Corporate/Prisons/Prisons.aspx">Scotland</a> to book a visit.
+            </p>
+        </div>
+    </div>
+    <!-- /From test2 -->
+
+	
+    
+</body>
+</html>

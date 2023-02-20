@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Test case Contrast</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>List</h2>
+    <h3>37) List not marked up as a list</h3>
+    <div class="example">
+        * apple <br />
+        * orange <br />
+        * banana <br />
+        * pear
+    </div>
+
+    <h3>38) Improperly nested lists</h3>
+    <div class="example">
+        <ul>
+            <ul>
+                <li>improperly nested</li>
+            </ul>
+        </ul>
+    </div>
+
+    <h3>39) LI element with no parent</h3>
+    <div class="example">
+        <li>
+            no parent
+        </li>
+    </div>
+
+    <h3>40) DT or DD elements that are not contained within a DL element</h3>
+    <div class="example">
+        <dt>html</dt>
+        <dd>a markup language for describing web documents</dd>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Images</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Images</h2>
+    <h3>51) Image with no alt attribute</h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark1.png" />
+    </div>
+
+    <h3>52) Image that conveys information has an empty alt attribute </h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark2.png" alt="" />
+    </div>
+
+    <h3>53) Image that conveys information has inappropriate alt text </h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark3.png" alt="Twr" />
+    </div>
+
+    <h3>54) Image alt attribute contains image file name </h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark4.png" alt="bbc-blocks-dark.png" />
+    </div>
+
+    <h3>55) Image with presentation role has non-empty alt</h3>
+    <div class="example">
+        <img role="presentation" src="images/decoration.png" width="368" height="118" alt="Decorative line clipart">
+    </div>
+
+    <h3>56) Image has empty alt and non-empty title</h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark6.png" alt="" title="BBC"/>
+    </div>
+
+    <h3>57) Image has alt and title that are different</h3>
+    <div class="example">
+        <img src="images/bbc-blocks-dark7.png" alt="BBC" title="BBC homepage"/>
+    </div>
+
+    <h3>58) Background image that conveys information does not have a text alternative</h3>
+    <div class="example">
+        <div class="warning-icon">
+            Taking too much of your pension money in early retirement could mean you don't have enough for later.
+        </div>
+    </div>
+
+    <h3>59) A distraction is present, an animated gif</h3>
+    <div class="example">
+        <img src="images/animated-tree.gif" width="157" height="193" alt="Animated gif of a Christmas tree with a toy train round and round the base of the tree">
+    </div>
+    
+    <h3>60) Image with partial text alternative</h3>
+    <div class="example">
+        <p>The image below contains a lot of information, such as which departments the sale is on. The text alternative in the alt attribute does not include this information, only a partial "25% off sale"</p>
+
+        <img src="images/sale.jpg" alt="sale" />
+    </div>
+	
+</body>
+</html>

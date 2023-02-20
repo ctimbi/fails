@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Others</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+	<h1>Test Others</h1>
+	<h2>Contrast</h2>
+	<h3>146) Using the fieldset and legend elements to give a border to text</h3>
+	<div class="example">
+		<fieldset>
+			<legend>
+				Bargain Corner
+			</legend>
+			<p>
+				Buy today, and save 20%
+			</p>
+		</fieldset>
+	</div>
+	
+	<h3>147) Using heading elements for presentational effect</h3>
+	<div class="example">
+			<h1>Study on the Use of Heading  Elements in Web Pages</h1>
+			
+			Datos del autor:
+			<h2>Joe Jones and Mary Smith</h2>
+			<h3>March 14, 2006</h3>
+			<h4>Abstract</h4>
+			<p>
+				A study was conducted in early 2006 WCAG 2.0 succeeds Web Content Accessibility Guidelines 1.0 [WCAG10], which was published as a W3C Recommendation May 1999. Although it is possible to conform either to WCAG 1.0 or to WCAG 2.0 (or both), the W3C recommends that new and updated content use WCAG 2.0. The W3C also recommends that Web accessibility policies reference WCAG 2.0.
+			</p>
+		</div>
+	<h3>148) Using blockquote elements to provide additional indentation</h3>
+	<div class="example">
+		<p>After extensive study of the company Web site, the task force 
+		identified the following common problem.</p>
+		
+		<blockquote>
+		<p>The use of markup for presentational effects made Web 
+		pages confusing to screen reader users.</p>
+		</blockquote>
+		
+		<p>The committee lists particular examples of the problems 
+		introduced by this practice below.</p>				
+	</div>
+	
+	<h3>149) Using white space characters to control spacing within a word</h3>
+	<div class="example">
+		<h4>H&nbsp;E&nbsp;L&nbsp;L&nbsp;O</h4>
+	</div>
+	
+	<h3>150) Using only pointing-device-specific event handlers (including gesture) for a function</h3>
+	<div class="example">
+		<p><img onmousedown="nextPage();" src="images/next-page.jpg" alt="Go to next page">
+		</p>
+	</div>
+	
+	<h3>152) Creating links that are not visually evident without color vision</h3>
+	<div class="example">
+		<p class="link-without-color">
+			To find out more about the <a href="rain_in_spain.htm">rain in spain</a> there are many resources.
+		</p>
+	</div>
+	
+	<h3>153) Using text-decoration:blink without a mechanism to stop it in less than five seconds</h3>
+	<div class="example">
+		<p>
+			My Great Product <span style="text-decoration:blink">Sale! $44,995!</span>
+		</p>
+	</div>
+	
+	<h3>154) Create a tab order that does not preserve meaning and operability</h3>
+	<div class="example">
+		<ol>
+			<li>
+				<a href="main.html" tabindex="1">Homepage</a>
+			</li>
+			<li>
+				<a href="chap.ter1.html" tabindex="4">Chapter 1</a>
+			</li>
+			<li>
+				<a href="chapter2.html" tabindex="3">Chapter 2</a>
+			</li>
+			<li>
+				<a href="chapter3.html" tabindex="2">Chapter 3</a>
+			</li>
+		</ol>
+	</div>
+	
+	<h4>158) Object does not have alternate text</h4>
+	<div class="example">
+		<object width="400" height="400" data="helloworld.swf"></object>
+	</div>
+	
+	<h3>159) Duplicate text of  caption and sumary</h3>
+	<div class="example">
+		<table summary="Shelly's Daughters T1">
+			<caption>Shelly's Daughters T1</caption>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Birthday</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Jackie</td>
+					<td>5</td>
+					<td>April 5</td>
+				</tr>
+				<tr>
+					<td>Beth</td>
+					<td>8</td>
+					<td>January 14</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<h4>160) No provide a text alternative for non-text content</h4>
+	<div class="example">
+		<div role="img">
+			<img src="images/fullstar.png" alt=""/>
+			<img src="images/fullstar.png" alt=""/>
+			<img src="images/fullstar.png" alt=""/>
+			<img src="images/fullstar.png" alt=""/>
+			<img src="images/emptystar.png" alt=""/>
+		</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

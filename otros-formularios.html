@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Buttons</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/test2.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+    <h2>Forms</h2>
+    <h3>95) Group of radio buttons not enclosed in a fieldset</h3>
+    <div class="example">
+        <h4>Do you already have a personal user account?</h4>
+		<form>
+        <label class="block-label" for="radio-inline-1">
+            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+            Yes
+        </label><br />
+        <label class="block-label" for="radio-inline-2">
+            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+            No
+        </label>
+        <input type="submit" value="Save to data"/>
+        </form>
+    </div>
+
+    <h3>96) Group of check boxes not enclosed in a fieldset</h3>
+    <div class="example">
+        <h4>Which types of waste do you transport regularly?</h4>
+        <form>
+        <label class="block-label" for="waste-type-1">
+            <input id="waste-type-1" name="waste-types" type="checkbox" value="waste-animal">
+            Waste from animal carcasses
+        </label><br />
+        <label class="block-label" for="waste-type-2">
+            <input id="waste-type-2" name="waste-types" type="checkbox" value="waste-mines">
+            Waste from mines or quarries
+        </label><br />
+        <label class="block-label" for="waste-type-3">
+            <input id="waste-type-3" name="waste-types" type="checkbox" value="waste-farm-agricultural">
+            Farm or agricultural waste
+        </label>
+        <input type="submit" value="Save to data"/>
+        </form>
+    </div>
+
+
+    <!-- From test2 -->
+    <h3>97) Errors are not identified</h3>
+    <div class="example">
+        <form class="errors-badly-identified errors-not-identified">
+            <div class="validation-summary" role="alert">
+                You need to fix the errors on this page before continuing.
+            </div>
+
+            <label>
+                Name
+                <input type="text" name="name" />
+            </label>
+            <label>
+                Surname
+                <input type="text" name="surname" />
+            </label>
+            <label>
+                Date of birth
+                <input type="text" name="date-of-birth" />
+            </label>
+            <input type="submit" value="Save to data"/>
+        </form>
+    </div>
+
+    <h3>98) Errors identified by colour only</h3>
+    <div class="example">
+        <form class="errors-badly-identified errors-colour-only">
+            <div class="validation-summary" role="alert">
+                You need to fix the errors on this page before continuing.
+            </div>
+
+            <label>
+                Passport number
+                <input type="text" class="has-errors" name="name" />
+            </label>
+            <label>
+                Name on passport
+                <input type="text" name="surname" />
+            </label>
+            <label>
+                Date of expiry
+                <input type="text" class="has-errors" name="date-of-birth" />
+            </label>
+            <input type="submit" value="Save to data 1"/>
+        </form>
+    </div>
+
+    <h3>99) Errors identified with a poor colour contrast</h3>
+    <div class="example">
+        <form class="errors-badly-identified error-poor-contrast">
+            <div class="validation-summary" role="alert">
+                You need to fix the errors on this page before continuing.
+            </div>
+
+            <label>
+                Claimant's name
+                <input type="text" class="has-errors" name="name" />
+            </label>
+            <label>
+                Claimant's surname
+                <input type="text" name="surname" />
+            </label>
+            <label>
+                Claimant's date of birth
+                <input type="text" class="has-errors" name="date-of-birth" />
+            </label>
+            <input type="submit" value="Save to data 2"/>
+        </form>
+    </div>
+
+    <h3>100) Error messages - no suggestion for corrections given, eg. required format</h3>
+    <div class="example">
+        <label class="required-format-not-given">
+            Phone number
+            <span class="error-message">is not valid</span>
+            <input class="has-errors" type="tel" required pattern="7[0-9]{9}" />
+        </label>
+        <input type="submit" value="Save to data 3"/>
+    </div>
+
+    <h3>101) Missing labels in checkboxes</h3>
+    <div class="example">
+    	<form>
+        <fieldset>
+            <legend>What is your nationality?</legend>
+
+            <label>British (including English, Scottish, Welsh and Northern Irish)</label>
+            <input type="checkbox" id="nationality_british" name="nationality.british" value="true">
+
+            <label>Irish</label>
+            <input type="checkbox" id="nationality_irish" name="nationality.irish" value="true">
+
+            <label>Citizen of a different country</label>
+            <input type="checkbox" id="nationality_hasOtherCountry" name="nationality.hasOtherCountry" value="true">
+        </fieldset>
+        <input type="submit" value="Save to data 5"/>
+        </form>
+    </div>
+
+    <h3>102) Two unique labels, but identical for= attributes</h3>
+    <div class="example">
+    	<form>
+        <label for="two-labels-day">Date of issue</label>
+        <p>
+            <label for="two-labels-day">Day</label>
+            <input type="text" id="two-labels-day" />
+            <label for="two-labels-month">Month</label>
+            <input type="text" id="two-labels-month" />
+            <label for="two-labels-year">Year</label>
+            <input type="text" id="two-labels-year" />
+        </p>
+        <input type="submit" value="Save to data 6"/>
+        </form>
+    </div>
+
+    <h3>103) Label element with for= attribute but not matching id= attribute of form control</h3>
+    <div class="example">
+    	<form>
+        <fieldset>
+            <legend>Non-matching for attribute</legend>
+
+            <label id="not-matching-anything">form</label>
+            <input type="checkbox" id="label-for-not-matching" value="yes" />
+        </fieldset>
+        <input type="submit" value="Save to data"/>
+        </form>
+    </div>
+
+    <h3>104) Labels missing when they would look clumsy for some form controls</h3>
+    <div class="example">
+        <label for="missing-labels-day">Your child's date of birth</label>
+        <p>
+            <input type="text" id="missing-labels-day" />
+            <input type="text" id="missing-labels-month" />
+            <input type="text" id="missing-labels-year" />
+        </p>
+    </div>
+
+    <h3>105) Left aligned form labels with too much white space</h3>
+    <div class="example">
+        <p class="too-much-whitespace">
+            <label for="input-too-far-away">Country</label>
+            <input id="input-too-far-away" type="text" />
+        </p>
+    </div>
+
+    <h3>106) Form control that changes context without warning</h3>
+    <div class="example">
+    	<form action="cange-context.php">
+	        <label for="language-selector">Select your language</label>
+	        <select id="language-selector" class="language-selector">
+	            <option value="">Change your language</option>
+	            <option value="en">English</option>
+	            <option value="de">German</option>
+	            <option value="fr">French</option>
+	        </select>
+	        
+        </form>
+    </div>
+    <!-- /From test2 -->
+</body>
+</html>

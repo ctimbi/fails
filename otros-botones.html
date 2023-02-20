@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test case Buttons</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<h1>Test cases</h1>
+	<h2>Buttons</h2>
+	
+	<h3>84) Empty button</h3>
+    <div class="example">
+        <button></button>
+    </div>
+
+    <h3>85) Image button has no alt attribute</h3>
+    <div class="example">
+        <input type="image" src="images/submit85.png">
+    </div>
+
+    <h3>86) Empty alt attribute on image button</h3>
+    <div class="example">
+        <input type="image" src="images/submit86.png" alt="">
+    </div>
+
+    <h3>87) Uninformative alt attribute value on image button</h3>
+    <div class="example">
+        <input type="image" src="images/submit87.png" alt="click" />
+    </div>
+    
+    <h2>Forms</h2>
+    <h3>88) Fieldset without a legend</h3>
+    <div class="example">
+        <fieldset>
+            I am a fieldset without a legend
+        </fieldset>
+    </div>
+
+    <h3>89) Empty legend</h3>
+    <div class="example">
+        <fieldset>
+            <legend></legend>
+        </fieldset>
+    </div>
+
+    <h3>90) Form element has no label</h3>
+    <div class="example">
+        <input type="text">
+    </div>
+
+    <h3>91) Empty label found</h3>
+    <div class="example">
+        <label for="empty"></label>
+        <input type="text" id="empty" value="">
+    </div>
+
+    <h3>92) Placeholder no label</h3>
+    <div class="example">
+        <input type="search" name="q" id="search-main" Placeholder="Search">
+        <input class="submit" type="submit" value="Search">
+    </div>
+
+    <h3>93) Non-unique field label found</h3>
+    <div class="example">
+        <label for="x_3">Name
+            <input type="text" name="x_3" id="x_3">
+        </label><br >
+
+        <label for="x_4">Name
+            <input type="text" name="x_4" id="x_4">
+        </label>
+    </div>
+    
+	<h3>94) Field hint not associated with input</h3>
+    <div class="example">
+        <label class="form-label" for="ni-number">
+            National Insurance number
+        </label>
+        <p class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</p>
+        <input class="form-control" id="ni-number" type="text">
+    </div>
+</body>
+</html>
